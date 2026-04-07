@@ -5,12 +5,8 @@
   <title>goose has moved — Redirecting…</title>
   <script>
     // Redirect from old block.github.io/goose/* to goose-docs.ai/*
-    // Strip the /goose base path (GitHub Pages project prefix) and preserve the rest
-    var path = window.location.pathname;
-    var base = '/goose';
-    if (path.indexOf(base) === 0) {
-      path = path.slice(base.length);
-    }
+    // Strip the GitHub Pages project prefix (first path segment) and preserve the rest
+    var path = window.location.pathname.replace(/^\/[^/]+/, '');
     var dest = 'https://goose-docs.ai' + path + window.location.search + window.location.hash;
     window.location.replace(dest);
   </script>
@@ -27,6 +23,6 @@
   <h1>🦆 goose has moved!</h1>
   <p>The goose documentation has moved to <a href="https://goose-docs.ai">goose-docs.ai</a>.</p>
   <p>You should be redirected automatically. If not, <a id="dest" href="https://goose-docs.ai">click here</a>.</p>
-  <script>document.getElementById('dest').href = 'https://goose-docs.ai' + (window.location.pathname.indexOf('/goose') === 0 ? window.location.pathname.slice(6) : window.location.pathname) + window.location.search + window.location.hash;</script>
+  <script>document.getElementById('dest').href = 'https://goose-docs.ai' + window.location.pathname.replace(/^\/[^/]+/, '') + window.location.search + window.location.hash;</script>
 </body>
 </html>
