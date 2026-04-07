@@ -1,18 +1,31 @@
 # 🦆 goose has moved!
 
-**goose** has moved from `block/goose` to the [Agentic AI Foundation (AAIF)](https://github.com/aaif-goose) at the Linux Foundation.
+**goose** has moved from `block/goose` to [`aaif-goose/goose`](https://github.com/aaif-goose/goose) under the [Agentic AI Foundation (AAIF)](https://aaif.io/) at the Linux Foundation.
 
-| | Old | New |
-|---|---|---|
-| **Repository** | `github.com/block/goose` | [`github.com/aaif-goose/goose`](https://github.com/aaif-goose/goose) |
-| **Documentation** | `block.github.io/goose` | [`goose-docs.ai`](https://goose-docs.ai) |
+Everything is the same — same code, same branches, same history, same maintainers. Just a new home.
 
-All links to the old GitHub Pages documentation site (`block.github.io/goose`) now redirect to the equivalent page on [goose-docs.ai](https://goose-docs.ai).
+## Update your git remote
+
+If you have an existing clone, update your remote and carry on:
+
+```sh
+git remote set-url origin git@github.com:aaif-goose/goose.git
+```
+
+Or if you use HTTPS:
+
+```sh
+git remote set-url origin https://github.com/aaif-goose/goose.git
+```
+
+That's it. Your local branches, commits, and work-in-progress are all unchanged.
 
 ## Links
 
-- 📖 [Documentation](https://goose-docs.ai)
-- 💻 [Source Code](https://github.com/aaif-goose/goose)
-- 💬 [Discord](https://discord.gg/block-opensource)
-- 🐛 [Issues](https://github.com/aaif-goose/goose/issues)
-- 📝 [Discussions](https://github.com/aaif-goose/goose/discussions)
+| | |
+|---|---|
+| 📦 **Repository** | [github.com/aaif-goose/goose](https://github.com/aaif-goose/goose) |
+| 📖 **Documentation** | [goose-docs.ai](https://goose-docs.ai) |
+| 🐛 **Issues** | [aaif-goose/goose/issues](https://github.com/aaif-goose/goose/issues) |
+| 💬 **Discussions** | [aaif-goose/goose/discussions](https://github.com/aaif-goose/goose/discussions) |
+| 🎮 **Discord** | [discord.gg/goose-oss](https://discord.gg/goose-oss) |
